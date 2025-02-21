@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar glass-card">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content glass-card">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Frontend Developer & AI Enthusiast</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content glass-card">
+            <div class="profile-picture">
+                <div class="picture-container">
+                    <img src="img/Snapchat-1751150683.jpg" alt="Ugbem Peter's Profile Picture" id="profile-img">
+                    <div class="picture-overlay">
+                        <label for="picture-upload" class="upload-btn">
+                            <i class="fas fa-camera"></i>
+                            Update Photo
+                        </label>
+                        <input type="file" id="picture-upload" accept="image/*" style="display: none;">
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3 class="name">Ugbem Peter</h3>
+                <div class="education">
+                    <p><i class="fas fa-graduation-cap"></i> 400 Level Student</p>
+                    <p><i class="fas fa-university"></i> University of Calabar</p>
+                    <p><i class="fas fa-book"></i> Electronics and Computer Technology</p>
+                </div>
+                <div class="bio">
+                    <p>I'm a passionate technology enthusiast currently pursuing my degree in Electronics and Computer Technology at the University of Calabar. With a strong foundation in both hardware and software, I combine my academic knowledge with practical skills in modern web development and AI technologies.</p>
+                    <p>My academic journey has equipped me with a unique perspective on technology, allowing me to bridge the gap between electronic systems and computer applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card glass-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Semantic HTML, Accessibility, Forms</p>
+            </div>
+            <div class="skill-card glass-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Flexbox, Grid, Animations</p>
+            </div>
+            <div class="skill-card glass-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>ES6+, DOM, Async/Await</p>
+            </div>
+            <div class="skill-card glass-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <p>Components, Hooks, State Management</p>
+            </div>
+            <div class="skill-card glass-card">
+                <i class="fas fa-brain"></i>
+                <h3>AI Development</h3>
+                <p>Machine Learning, NLP, AI Integration</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card glass-card">
+                <div class="project-image">
+                    <img src="projects/nigeria-weather-app/preview.jpg" alt="Nigeria Weather App">
+                </div>
+                <div class="project-content">
+                    <h3>Nigeria Weather App</h3>
+                    <p>A real-time weather application that shows current weather conditions across all Nigerian states. Features include temperature, humidity, wind speed, and more.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>OpenWeather API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="projects/nigeria-weather-app/index.html" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form class="contact-form glass-card">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer glass-card">
+        <div class="footer-content">
+            <p>&copy; 2025 Ugbem Peter. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
